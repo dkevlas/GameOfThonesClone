@@ -1,0 +1,107 @@
+@import '../../../../styles.scss';
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid pink;
+    .slider{
+        overflow: hidden;
+        background-color: black;
+        width: 300px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .items{
+            position: absolute;
+            width: max-content;
+            display: flex;
+            transition: left .25s ease-in-out;
+            //left: -0px; // JS
+            .item{
+                width: 75px;
+                height: 75px;
+                outline: 1px solid red;
+                padding: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &.border{
+                        outline: 2px solid yellow;
+                    }
+                }
+            }
+        }
+    }
+    .buttons{
+        button{
+            position: absolute;
+            width: 50px;
+            aspect-ratio: 1/1;
+            bottom: -25px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: inset 0 0 5px white, 0 0 5px white;
+            cursor: pointer;
+            transition: opacity .25s, border .25s;
+            &:disabled{
+                opacity: .5;
+                border: 0;
+                cursor: default;
+            }
+            svg{
+                fill: white;
+                filter: drop-shadow(0 0 5px white);
+            }
+        }
+        .prev{
+            right: calc(50% + 25px);
+        }
+        .next{
+            left: calc(50% + 25px);
+        }
+    }
+}
+@include mediaQuerie(medium){
+    .container{
+        padding: 25px 0;
+        justify-content: end;
+        .slider{
+            transform: rotate(90deg);
+            width: 300px;
+            height: 300px;
+            left: 0px;
+            .items{
+                .item{
+                    img{
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+        .buttons{
+            button{
+                svg{
+                    transform: rotate(90deg);
+                }
+            }
+            .prev{
+                top: -50px;
+                bottom: auto;
+                right: 125px;
+            }
+            .next{
+                bottom: -50px;
+                left: calc(100% - 175px);
+            }
+        }
+    }
+}
