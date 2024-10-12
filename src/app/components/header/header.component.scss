@@ -1,8 +1,11 @@
+@import '../../../styles.scss';
+
 .slider{
     min-width: 300px;
     width: 100%;
     height: 500px;
     position: relative;
+    overflow: hidden;
     .listImg{
         height: 100%;
         display: flex;
@@ -40,5 +43,17 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+@include mediaQuerie(medium){
+    .slider{
+        height: 600px;
+    }
+}
+@include mediaQuerie(xxlarge){
+    .slider{
+        max-width: 1920px;
+        margin: auto;
     }
 }
