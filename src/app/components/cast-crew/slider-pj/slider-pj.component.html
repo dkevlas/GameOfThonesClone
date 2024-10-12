@@ -1,19 +1,24 @@
 <div class="container">
-    <div class="slider">
-        <div class="items" [ngStyle]="{'left': left,}">
-            @for (pj of charactersItems; track $index) {
-                <div class="item">
-                    <img (click)="changeSelect($index)" [ngClass]="{'border': selectIndex == $index}" [src]="pj.img" [alt]="pj.alt">
-                </div>
-            }
+    <div class="characters">
+        <div class="slider">
+            <div class="items" [ngStyle]="{'left': left,}">
+                @for (pj of charactersItems; track $index) {
+                    <div class="item">
+                        <img (click)="changeSelect($index)" [ngClass]="{'border': selectIndex == $index}" [src]="pj.img" [alt]="pj.alt">
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="buttons">
+            <button [disabled]="prevDisabled" class="prev" (click)="btnPrev()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+            </button>
+            <button [disabled]="nextDisabled" class="next" (click)="btnNext()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            </button>
         </div>
     </div>
-    <div class="buttons">
-        <button [disabled]="prevDisabled" class="prev" (click)="btnPrev()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
-        </button>
-        <button [disabled]="nextDisabled" class="next" (click)="btnNext()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
-        </button>
+    <div class="summary">
+        <app-summary-pj [title]="title" [paragraph]="paragraph" [bgImage]="bgImage"></app-summary-pj>
     </div>
 </div>

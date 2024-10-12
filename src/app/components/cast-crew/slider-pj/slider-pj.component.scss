@@ -2,13 +2,22 @@
 
 .container{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    .summary{
+        outline: 2px solid yellowgreen;
+        text-align: start;
+        height: 450px;
+        padding-left: clamp(1.25rem, -2.187rem + 9.167vw, 4.688rem);
+    }
+}
+.characters{
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 2px solid pink;
     .slider{
         overflow: hidden;
-        background-color: black;
         width: 300px;
         height: 150px;
         display: flex;
@@ -19,11 +28,9 @@
             width: max-content;
             display: flex;
             transition: left .25s ease-in-out;
-            //left: -0px; // JS
             .item{
                 width: 75px;
                 height: 75px;
-                outline: 1px solid red;
                 padding: 5px;
                 img{
                     width: 100%;
@@ -32,7 +39,7 @@
                     border-radius: 50%;
                     cursor: pointer;
                     &.border{
-                        outline: 2px solid yellow;
+                        outline: 3px solid white;
                     }
                 }
             }
@@ -72,6 +79,16 @@
 }
 @include mediaQuerie(medium){
     .container{
+        flex-direction: row;
+        justify-content: center;
+        .summary{
+            width: 100%;
+            margin-left: -50px;
+            z-index: $z-element;
+            height: 350px;
+        }
+    }
+    .characters{
         padding: 25px 0;
         justify-content: end;
         .slider{
@@ -82,6 +99,7 @@
             .items{
                 .item{
                     img{
+                        padding: 5px;
                         transform: rotate(-90deg);
                     }
                 }
@@ -102,6 +120,16 @@
                 bottom: -50px;
                 left: calc(100% - 175px);
             }
+        }
+    }
+}
+
+@include mediaQuerie(large){
+    .container{
+        .summary{
+            margin-left: 0;
+            width: 100%;
+            max-width: 700px;
         }
     }
 }
