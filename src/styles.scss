@@ -1,5 +1,10 @@
+@import './app/scss/variables.scss';
+@import './app/scss/mixins.scss';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: #666;
 }

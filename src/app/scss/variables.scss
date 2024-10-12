@@ -1,0 +1,15 @@
+$breakpoint: (
+    small: 0px,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+);
+
+// Z-INDEX
+$z-back: -1;
+$z-normal: 1;
+$z-element: 10;
+$z-fixed: 100;
+$z-popup: 500;
+$z-modal: 1000;
