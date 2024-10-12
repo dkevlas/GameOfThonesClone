@@ -1,0 +1,38 @@
+@import '../../../styles.scss';
+
+.subtitle{
+    min-width: 300px;
+    max-width: 1440px;
+    margin: auto;
+    h2{
+        color: white;
+        text-align: center;
+        width: 50%;
+    }
+}
+.container{
+    min-width: 300px;
+    .characters{
+        background-color: #333;
+    }
+}
+
+@include mediaQuerie(medium){
+    h2{
+        width: 60%;
+    }
+    .container{
+        width: 100%;
+        padding: 1em 0;
+        .characters{
+            padding: 2em 0;
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        max-width: 1440px;
+        margin: auto;
+        padding: 2em 0;
+    }
+}
