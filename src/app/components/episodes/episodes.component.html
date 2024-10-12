@@ -1,0 +1,22 @@
+<div class="episodes">
+    <div class="header">
+        <div class="subtitle">
+            <h2>EPISODE GUIDE</h2>
+        </div>
+        <div class="options">
+            <select [(ngModel)]="selectOption">
+                <option value="1s">Season 1</option>
+                <option value="2s">Season 2</option>
+                <option value="3s">Season 3</option>
+                <option value="4s">Season 4</option>
+                <option value="5s">Season 5</option>
+                <option value="6s">Season 6</option>
+                <option value="7s">Season 7</option>
+                <option value="8s">Season 8</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <app-season [seasonSelect]="selectOption" ></app-season>
+    </div>
+</div>

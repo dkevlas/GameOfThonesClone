@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.header{
+    @include header;
+    .subtitle{
+        @include subtitle;
+    }
+    .options{
+        text-align: end;
+    }
+}
+.container{
+    margin-top: 9em;
+}
+@include mediaQuerie(medium){
+    .header{
+        .options{
+            text-align: start;
+        }
+    }
+}
