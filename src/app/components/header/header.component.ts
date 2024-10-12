@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 interface Imagen{
-  img: string
+  img: string,
+  alt: string
 }
 @Component({
   selector: 'app-header',
@@ -20,13 +21,39 @@ export class HeaderComponent {
     }
   }
 
-  listImg = [
-    {img: 'https://www.hola.com/horizon/landscape/e5e8b656b9fe-lisa-t.jpg', alt: 'imagen 1'},
-    {img: 'https://storage.googleapis.com/atime-media-prod/content/9d00564c-d163-428b-a222-5ffea9752d26.jpeg', alt: 'imagen 2' },
-    {img: 'https://www.rollingstone.com/wp-content/uploads/2024/06/lisa-new-solo-music.jpg?w=1581&h=1054&crop=1', alt: 'imagen 3' },
-    {img: 'https://www.billboard.com/wp-content/uploads/2024/06/LISA-press-2024-billboard-1548.png', alt: 'imagen 4' },
-    {img: 'https://static.bangkokpost.com/media/content/20240209/c1_2739485_240209221759.jpg', alt: 'imagen 5' },
-    {img: 'https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/05/07/blackpinks_lisa_0.png', alt: 'imagen 6' },
+  listImg: Imagen[] = [
+    {
+      img: 'https://www.hola.com/horizon/landscape/e5e8b656b9fe-lisa-t.jpg',
+      alt: 'Got Season 1'
+    },
+    {
+      img: 'https://storage.googleapis.com/atime-media-prod/content/9d00564c-d163-428b-a222-5ffea9752d26.jpeg',
+      alt: 'Got Season 2' 
+    },
+    {
+      img: 'https://www.rollingstone.com/wp-content/uploads/2024/06/lisa-new-solo-music.jpg?w=1581&h=1054&crop=1',
+      alt: 'Got Season 3' 
+    },
+    {
+      img: 'https://www.billboard.com/wp-content/uploads/2024/06/LISA-press-2024-billboard-1548.png',
+      alt: 'Got Season 4' 
+    },
+    {
+      img: 'https://static.bangkokpost.com/media/content/20240209/c1_2739485_240209221759.jpg',
+      alt: 'Got Season 5' 
+    },
+    {
+      img: 'https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/05/07/blackpinks_lisa_0.png',
+      alt: 'Got Season 6' 
+    },
+    {
+      img: 'https://media.cnn.com/api/v1/images/stellar/prod/231101091623-lisa-blackpink-file.jpg?c=16x9&q=h_833,w_1480,c_fill',
+      alt: 'GoT Season 7'
+    },
+    {
+      img: 'https://los40.com/resizer/v2/LJV5HASCJRCUNFHFEU2EXVQBSM.jpg?auth=25335451e67e05a0e3fadb2553b4d26e91577aaaea1492a6ad6edb56d1a9f6e0&quality=70&width=1200&height=544&focal=1905,875',
+      alt: 'GoT Season 8'
+    }
   ]
 
   cantImgs: number = this.listImg.length
