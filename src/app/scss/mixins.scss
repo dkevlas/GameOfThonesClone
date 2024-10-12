@@ -3,3 +3,26 @@
         @content;
     }
 }
+
+@mixin header{
+    max-width: 1024px;
+    min-width: 300px;
+    padding: .5em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @include mediaQuerie(medium){
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@mixin subtitle{
+    margin: auto;
+    text-wrap: nowrap;
+    width: 100%;
+    h2{
+        font-size: clamp(1.125rem, 0.813rem + 0.833vw, 1.563rem);
+        color: white;
+    }
+}

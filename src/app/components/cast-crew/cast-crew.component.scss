@@ -1,13 +1,9 @@
 @import '../../../styles.scss';
 
-.subtitle{
-    min-width: 300px;
-    max-width: 1440px;
-    margin: auto;
-    h2{
-        color: white;
-        text-align: center;
-        width: 50%;
+.header{
+    @include header;
+    .subtitle{
+        @include subtitle;
     }
 }
 .container{
