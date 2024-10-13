@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Character, characters } from '../characters';
 
 @Component({
@@ -41,12 +41,14 @@ export class SliderPjComponent implements OnInit{
   title: string = ''
   paragraph: string = ''
   bgImage: string = ''
+  alCharacter: string = ''
 
   changeSelect(n: number){
     this.selectIndex = n
     this.title = this.charactersItems[this.selectIndex].name
     this.paragraph = this.charactersItems[this.selectIndex].description
     this.bgImage = this.charactersItems[this.selectIndex].bgCharacter
+    this.alCharacter = this.charactersItems[this.selectIndex].alt
   }
   
   ngOnInit(): void {
