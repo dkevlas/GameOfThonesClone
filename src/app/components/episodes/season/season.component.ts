@@ -1,8 +1,13 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Season } from './../seasons-data/seasonInterface';
 import { EpisodesS1 } from './../seasons-data/season1';
 import { EpisodesS2 } from './../seasons-data/season2';
 import { EpisodesS3 } from './../seasons-data/season3';
+import { EpisodesS4 } from './../seasons-data/season4';
+import { EpisodesS5 } from './../seasons-data/season5';
+import { EpisodesS6 } from './../seasons-data/season6';
+import { EpisodesS7 } from './../seasons-data/season7';
+import { EpisodesS8 } from './../seasons-data/season8';
 import { BgSeason, bgSeason } from './../seasons-data/bgSeasonInterface';
 
 @Component({
@@ -10,9 +15,8 @@ import { BgSeason, bgSeason } from './../seasons-data/bgSeasonInterface';
   templateUrl: './season.component.html',
   styleUrl: './season.component.scss'
 })
-export class SeasonComponent implements OnInit, OnChanges{
+export class SeasonComponent implements OnChanges{
 
-  ngOnInit(): void {}
   ngOnChanges(changes: SimpleChanges): void {
     if(changes['seasonSelect']){
       this.numero = parseInt(this.seasonSelect)
@@ -24,13 +28,23 @@ export class SeasonComponent implements OnInit, OnChanges{
   s1: Season[] = EpisodesS1
   s2: Season[] = EpisodesS2
   s3: Season[] = EpisodesS3
+  s4: Season[] = EpisodesS4
+  s5: Season[] = EpisodesS5
+  s6: Season[] = EpisodesS6
+  s7: Season[] = EpisodesS7
+  s8: Season[] = EpisodesS8
 
   bgSeason : BgSeason[] = bgSeason
 
   allSeason: any[] = [
     this.s1,
     this.s2,
-    this.s3
+    this.s3,
+    this.s4,
+    this.s5,
+    this.s6,
+    this.s7,
+    this.s8
   ]
 
   @Input()
@@ -44,7 +58,7 @@ export class SeasonComponent implements OnInit, OnChanges{
   numEpisode: number = 0
   seasonCurrent: Season[] = []
   bgCurrent: string = ''
-
+  altBgCurrent: string = ''
   //CANTIDAD DE EPISODIOS
   cantEpisodes: number = 0
   applyChanges(s: number): void{
@@ -52,7 +66,9 @@ export class SeasonComponent implements OnInit, OnChanges{
     this.subTitle = this.seasonCurrent[0].title
     this.description = this.seasonCurrent[0].description
     this.numEpisode = this.seasonCurrent[0].episode
-    this.bgCurrent = `url(${bgSeason[s - 1].season})`
+    // this.bgCurrent = `url(${bgSeason[s - 1].season})`
+    this.bgCurrent = bgSeason[s - 1].season
+    this.altBgCurrent = bgSeason[s - 1].alt
     //CAPITULO 1 cada vez que se cambia de TEMPORADA
     this.selectImg = 0
     this.cantEpisodes = this.seasonCurrent.length

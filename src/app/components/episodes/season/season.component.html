@@ -1,19 +1,20 @@
 <div class="container" >
     <div class="bg" [ngStyle]="{'background-image': bgCurrent}">
-        <div class="layerBlack"></div>
+        <!-- <div class="layerBlack"></div> -->
+        <img [src]="bgCurrent" [alt]="altBgCurrent">
     </div>
     <div class="slider">
         <div class="allImg" [ngStyle]="{'top': topAllImg}">
             @for (item of seasonCurrent; track $index) {
                 <div class="listEpisode">
-                    <span>{{item.episode}}</span>
-                    <img (click)="moveEpisose($index)" (click)="selectEpisode($index)" [ngClass]="{'sizeImg': selectImg == $index}" [src]="item.img" alt="">
+                    <span>0{{item.episode}}</span>
+                    <img (click)="moveEpisose($index)" (click)="selectEpisode($index)" [ngClass]="{'sizeImg': selectImg == $index}" [src]="item.img" [alt]="item.alt">
                 </div>
             }
         </div>
     </div>
     <div class="description">
-        <h3>Titulo {{subTitle}}</h3>
-        <p>Descripcion: {{description}}</p>
+        <h3>{{subTitle}}</h3>
+        <p>{{description}}</p>
     </div>
 </div>
