@@ -8,9 +8,6 @@
 }
 .container{
     min-width: 300px;
-    .characters{
-        background-color: #333;
-    }
 }
 
 @include mediaQuerie(medium){
