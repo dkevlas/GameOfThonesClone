@@ -2,5 +2,56 @@
 
 .container{
     width: 100%;
-    
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    h3{
+        font-size: clamp(1.25rem, 0.804rem + 1.19vw, 1.875rem);
+    }
+    p{
+        font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+    }
+    img{
+        width: 90%;
+        aspect-ratio: 1/1;
+        max-width: 300px;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+        filter: brightness(.4);
+        mask-image: linear-gradient(black 80%, transparent);
+    }
+}
+@include mediaQuerie(medium){
+    .container{
+        height: 100%;
+        margin: 0;
+        position: relative;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+        img{
+            position: absolute;
+            width: 100%;
+            max-width: 350px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        img{
+            width: 80%;
+            max-width: max-content;
+        }
+    }
 }

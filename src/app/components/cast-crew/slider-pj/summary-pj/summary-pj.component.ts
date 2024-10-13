@@ -14,4 +14,7 @@ export class SummaryPjComponent {
 
   @Input()
   bgImage: string = ''
+
+  @Input()
+  altCharacter: string = ''
 }
