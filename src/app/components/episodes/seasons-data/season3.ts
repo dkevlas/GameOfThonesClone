@@ -2,45 +2,73 @@ import { Season } from "./seasonInterface";
 
 export const EpisodesS3: Season[] = [
     {
-        episode: 31,
-        title: 'Cap 31',
-        img: 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2022-11/jenna-ortega-en-la-premier-de-Wednesday-11e0d8.jpg',
+        episode: 1,
+        title: 'Valar Dohaeris',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e1.webp',
         alt: 'GoT s3 e1',
-        description: 'S3 epi1'
+        description: 'Jon es llevado ante Mance Rayder, mientras los sobrevivientes Night’s Watch se retiran al sur. Tyrion pregunta por su recompensa.'
     },
     {
-        episode: 32,
-        title: 'Cap 32',
-        img: 'https://images.ecestaticos.com/c6I7H__aNUON80f7ENS5xeoJ_HY=/256x9:1446x901/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F3f4%2F27a%2Fa0a%2F3f427aa0a49e0f589d670fdf5fbd5970.jpg',
-        alt: '',
-        description: 'S3 epi2'
+        episode: 2,
+        title: 'Alas Oscuras, Palabras Oscuras',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e2.webp',
+        alt: 'Got s3 e2',
+        description: 'Sansa dice demasiado. Shae le pide a Tyrion un favor. Jaime encuentra la manera de pasar el tiempo. Arya se dirige hacia La Hermandad.'
     },
     {
-        episode: 33,
-        title: 'Cap 33',
-        img: 'https://hips.hearstapps.com/hmg-prod/images/sydney-sweeney-euphoria-season-2-1643186397.jpg?resize=980:*',
+        episode: 3,
+        title: 'Paseo del Castigo',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e3.webp',
         alt: 'GoT s3 e3',
-        description: 'S3 epi3'
+        description: 'Tyrion respalda nuevas responsabilidades. Jon es llevado al Puño de Los Primeros Hombres. Daenerys se reúne con los esclavos.'
     },
     {
-        episode: 34,
-        title: 'Cap 34',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRcaSTYVilhUtFBfRWKU9YuXi4VHpiST8NmPVQWObUmMyP-hw3Nm7mSN-wJxxTRCpTQPQ&usqp=CAU',
+        episode: 4,
+        title: 'Y ahora su Guardia ha terminado',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e4.webp',
         alt: 'GoT s3 e4',
-        description: 'S3 epi4'
+        description: 'Los Vigilantes Nocturnos hacen el equilibrio. Varys conoce a su mejor. Arya es llevada con el comandante de La Hermandad.'
     },
     {
-        episode: 35,
-        title: 'Cap 35',
-        img: 'https://phantom-marca-mx.unidadeditorial.es/50d3965f8b20cd917e64458a80133ab8/resize/828/f/jpg/mx/assets/multimedia/imagenes/2023/06/27/16878271971947.jpg',
+        episode: 5,
+        title: 'Besado por el Fuego',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e5.webp',
         alt: 'GoT s3 e5',
-        description: 'S3 epi5'
+        description: 'El Sabueso es juzgado por los dioses. Jaime es juzgado por los hombres. Jon se prueba a sí mismo. Robb es traicionado.'
     },
     {
-        episode: 36,
-        title: 'Cap 36',
-        img: 'https://lumiere-a.akamaihd.net/v1/images/dua_lipa_portada_5_bf1628a4.jpeg?region=15,0,1956,1100&width=960',
+        episode: 6,
+        title: 'La Subida',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e6.webp',
         alt: 'GoT s3 e6',
-        description: 'S3 epi6'
+        description: 'Cuatro Casas consideran hacer o deshacer alianzas. Jon y los Wildlings se enfrentan a una intimidante escalada.'
+    },
+    {
+        episode: 7,
+        title: 'La Feria del Oso y la Doncella',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e7.webp',
+        alt: 'GoT s3 e7',
+        description: 'Dany intercambia regalos en Yunkai. Brienne se enfrenta a un enemigo formidable en Harrenhal.'
+    },
+    {
+        episode: 8,
+        title: 'Segundos Hijos',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e8.webp',
+        alt: 'GoT s3 e8',
+        description: 'Dany conoce al Bastardo del Titán. Kings Landing organiza una boda.'
+    },
+    {
+        episode: 9,
+        title: 'Las Lluvias de Castamere',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e9.webp',
+        alt: 'GoT s3 e9',
+        description: 'La Casa Frey y La Casa Tully unen sus fuerzas. Jon se enfrenta a la prueba más difícil hasta ahora.'
+    },
+    {
+        episode: 10,
+        title: 'Mhysa',
+        img: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/s3/s3e10.webp',
+        alt: 'GoT s3 e10',
+        description: 'Final de temporada. Joffrey reta a Tywin. Bran cuenta una historia de fantasmas. En Dragonstone, la piedad llega de alguien inesperado.'
     }
 ]

@@ -1,13 +1,37 @@
 export interface BgSeason{
+    alt: string,
     season: string,
 }
 export const bgSeason: BgSeason[] = [
-    {season: 'https://los40.com/resizer/v2/LJV5HASCJRCUNFHFEU2EXVQBSM.jpg?auth=25335451e67e05a0e3fadb2553b4d26e91577aaaea1492a6ad6edb56d1a9f6e0&quality=70&width=1200&height=544&focal=1905,875'},
-    {season: 'https://wortev.com/wp-content/uploads/2023/04/Negocios-de-Rihanna-WORTEV.png'},
-    {season: 'https://www.lecturas.com/medio/2024/04/17/taylor-swift_e9092fba_240417225254_1280x720.jpg'},
-    {season: 'bg 04'},
-    {season: 'bg 05'},
-    {season: 'bg 06'},
-    {season: 'bg 07'},
-    {season: 'bg 08'}
+    {
+        alt: 'La ejecución de Ned Stark',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-ejecucion-de-Ned-Stark.webp'},
+    {
+        alt: 'La batalla de Aguasnegras',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-batalla-de-Aguasnegras.webp',
+    },
+    {
+        alt: 'La boda Roja',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-boda-roja.webp',
+    },
+    {
+        alt: 'La muerte de Joffrey',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-muerte-de-Joffrey.webp',
+    },
+    {
+        alt: 'La batalla de los bastardos',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-caminata-de-la-verguenza-de-Cersei.webp',
+    },
+    {
+        alt: '',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-batalla-de-los-bastardos.webp',
+    },
+    {
+        alt: 'La destruccion del muro',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-destruccion-del-muro.webp',
+    },
+    {
+        alt: 'La muerte de Daenerys Targaryen',
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-muerte-de-Daenerys-Targaryen.webp,'
+    }
 ]
