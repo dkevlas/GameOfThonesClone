@@ -1,5 +1,7 @@
 @import '../../../styles.scss';
-
+.episodes{
+    margin: 5em 0
+}
 .header{
     @include header;
     .subtitle{

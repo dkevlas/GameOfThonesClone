@@ -32,6 +32,6 @@ export const bgSeason: BgSeason[] = [
     },
     {
         alt: 'La muerte de Daenerys Targaryen',
-        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-muerte-de-Daenerys-Targaryen.webp,'
+        season: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/episode-guide/background/La-muerte-de-Daenerys-Targaryen.webp'
     }
 ]

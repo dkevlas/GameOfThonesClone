@@ -1,5 +1,7 @@
 @import '../../../styles.scss';
-
+.cast-crew{
+    margin: 5em 0;
+}
 .header{
     @include header;
     .subtitle{

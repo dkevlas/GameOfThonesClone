@@ -4,7 +4,7 @@
             <div class="items" [ngStyle]="{'left': left,}">
                 @for (pj of charactersItems; track $index) {
                     <div class="item">
-                        <img (click)="changeSelect($index)" [ngClass]="{'border': selectIndex == $index}" [src]="pj.img" [alt]="pj.alt">
+                        <img appNotImage (click)="changeSelect($index)" [ngClass]="{'border': selectIndex == $index}" [src]="pj.img" [alt]="pj.alt">
                     </div>
                 }
             </div>
