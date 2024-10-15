@@ -24,7 +24,6 @@ export class GalleryComponent {
   moveSizeHeight: number = 70
   changePosition(indexCurrent: number){
     this.active = indexCurrent
-    console.log(indexCurrent)
     if(indexCurrent < 2 ){
       this.topPosition = '0px'
     } else if (indexCurrent > (this.cantImages - 3)){

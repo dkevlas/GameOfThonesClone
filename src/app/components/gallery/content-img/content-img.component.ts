@@ -15,6 +15,5 @@ export class ContentImgComponent implements OnInit {
   ngOnInit(): void {
     this.img = this.itemShow.img
       this.itemShow
-      console.log(this.img)
   }
 }
