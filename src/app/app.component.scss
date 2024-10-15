@@ -1,0 +1,16 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://global-media-repository.s3.us-east-2.amazonaws.com/clones/got/background-got.webp');
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    .layer-black{
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .8);
+    }
+}

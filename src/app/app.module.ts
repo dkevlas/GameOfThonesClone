@@ -11,6 +11,7 @@ import { SummaryPjComponent } from './components/cast-crew/slider-pj/summary-pj/
 import { EpisodesComponent } from './components/episodes/episodes.component';
 import { SeasonComponent } from './components/episodes/season/season.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ContentImgComponent } from './components/gallery/content-img/content-img.component';
 import { NotImageDirective } from './components/not-image.directive';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { NotImageDirective } from './components/not-image.directive';
     EpisodesComponent,
     SeasonComponent,
     GalleryComponent,
+    ContentImgComponent,
     NotImageDirective,
   ],
   imports: [
