@@ -1,27 +1,47 @@
-# GameOfThrones
+# Game of Thrones Web Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+### Imitación y/o Mejora de un Diseño Web
 
-## Development server
+Este proyecto es una recreación de una web inspirada en una imagen de Game of Thrones encontrada en Pinterest. El diseño original era solo para escritorio, pero he expandido el proyecto para hacerlo **responsive**, agregando **interacción y lógica** utilizando SCSS, Typescript y Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Comparación de Diseños
 
-## Code scaffolding
+- **[Diseño Original](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Design-Original.jpg)**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Imitaciones por Tipo de Pantalla
 
-## Build
+1. **Mobile-Large**  
+   - **[iPhone XR/XS Max](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Mobile-Large.webp)**
+   - Resolución: 414x1941
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Mobile-Medium**  
+   - **[Galaxy S9/Note 8/S8](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Mobile-Medium.webp)**
+   - Resolución: 349x2186
 
-## Running unit tests
+3. **Tablet-Large**  
+   - **[iPad Pro (12.9-inch)](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Tablet-Large.webp)**
+   - Resolución: 1026x1475
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. **Laptop-Standard**  
+   - **[Laptop Standard](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Laptop-Standard.webp)**
+   - Resolución: 1440x1622
 
-## Running end-to-end tests
+5. **Desktop-Wide**  
+   - **[Large Screen](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Desktop-Wide.webp)**
+   - Resolución: 691x1334
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+6. **Laptop-Personal**  
+   - **[Personal Laptop](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-03-Game-Of-Thrones/Laptop-Personal.webp)**
+   - Resolución: 1366x1608
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Mejoras realizadas:
+- Adaptado para **celulares**, **tablets**, y otras resoluciones.
+
+## Código del Proyecto
+
+1. **Clonar el repositorio** usando Git:
+
+   ```bash
+   git clone https://github.com/dkevlas/GameOfThonesClone.git
+   ```
