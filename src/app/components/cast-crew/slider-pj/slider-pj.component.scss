@@ -32,6 +32,7 @@
                 padding: 5px;
                 img{
                     width: 100%;
+                    user-select: none;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 50%;
@@ -47,6 +48,7 @@
     }
     .buttons{
         button{
+            user-select: none;
             position: absolute;
             width: 50px;
             aspect-ratio: 1/1;

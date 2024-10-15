@@ -59,6 +59,7 @@
         display: flex;
         z-index: 1;
         justify-content: space-between;
+        user-select: none;
         button{
             width: 30px;
             cursor: pointer;

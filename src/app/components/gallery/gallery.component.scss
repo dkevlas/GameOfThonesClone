@@ -44,6 +44,7 @@
             transition: top .25s ease-in-out;
             .itemImg{
                 img{
+                    user-select: none;
                     width: 210px;
                     height: 70px;
                     object-fit: cover;

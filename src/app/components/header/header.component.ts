@@ -50,6 +50,6 @@ export class HeaderComponent {
         this.positionLeft = `${parseInt(this.positionLeft) - 100}%`
         left = this.positionLeft
       }
-    }, 5000000)
+    }, 5000)
   }
 }

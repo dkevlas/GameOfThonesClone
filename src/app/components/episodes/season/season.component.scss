@@ -21,6 +21,7 @@
         transition: background .25s;
         img{
             position: absolute;
+            user-select: none;
             object-fit: cover;
             object-position: 80% 0;
             width: 100%;
@@ -54,8 +55,10 @@
                     text-align: end;
                     width: 50px;
                     height: 20px;
+                    user-select: none;
                 }
                 img{
+                    user-select: none;
                     width: 150px;
                     aspect-ratio: 5/3;
                     object-fit: cover;
