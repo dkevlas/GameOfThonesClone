@@ -1,12 +1,6 @@
 @import './app/scss/variables.scss';
 @import './app/scss/mixins.scss';
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none;
-}
+@import './app/scss/base.scss';
 body{
     background-color: black;
 }

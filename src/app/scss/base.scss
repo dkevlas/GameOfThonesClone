@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+::selection{
+    background:  rgba(255,0,0,.5);
+    color: white;
+}
+button{
+    outline: none;
+    background-color: none;
+    border: none;
+}
+button, img{
+    -webkit-tap-highlight-color: transparent
+}
