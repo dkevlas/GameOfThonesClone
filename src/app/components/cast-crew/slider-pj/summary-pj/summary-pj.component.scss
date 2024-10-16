@@ -13,9 +13,11 @@
     color: white;
     h3{
         font-size: clamp(1.25rem, 0.804rem + 1.19vw, 1.875rem);
+        user-select: text;
     }
     p{
         font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+        user-select: text;
     }
     img{
         width: 90%;
