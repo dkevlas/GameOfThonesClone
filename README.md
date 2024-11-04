@@ -38,10 +38,22 @@ Este proyecto es una recreación de una web inspirada en una imagen de Game of T
 ### Mejoras realizadas:
 - Adaptado para **celulares**, **tablets**, y otras resoluciones.
 
+
 ## Código del Proyecto
 
 1. **Clonar el repositorio** usando Git:
-
    ```bash
    git clone https://github.com/dkevlas/GameOfThonesClone.git
+   ```
+2. **Navegar** al directorio del proyecto:
+   ```bash
+   cd GameOfThonesClone
+   ```
+3. **Instalar las dependencias** Asegúrate de tener Node.js y npm instalados. Luego ejecuta:
+   ```bash
+   npm install
+   ```
+4. **Iniciar** el servidor:
+   ```
+   ng serve
    ```
