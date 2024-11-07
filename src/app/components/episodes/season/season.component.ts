@@ -66,7 +66,6 @@ export class SeasonComponent implements OnChanges{
     this.subTitle = this.seasonCurrent[0].title
     this.description = this.seasonCurrent[0].description
     this.numEpisode = this.seasonCurrent[0].episode
-    // this.bgCurrent = `url(${bgSeason[s - 1].season})`
     this.bgCurrent = bgSeason[s - 1].season
     this.altBgCurrent = bgSeason[s - 1].alt
     //CAPITULO 1 cada vez que se cambia de TEMPORADA
